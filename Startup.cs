@@ -26,8 +26,45 @@ namespace AdvancedProgramming_Lesson1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
             services.AddDbContext<MvcMovieContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
+
+            services.AddDbContext<MvcBookListContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcBookListContext")));
+
+            services.AddDbContext<MvcPhoneContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcPhoneContext")));
+
+            services.AddDbContext<MvcShoeContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcShoeContext")));
+
+            services.AddDbContext<MvcKnifeContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcKnifeContext")));
+
+            services.AddDbContext<MvcPlateContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcPlateContext")));
+
+            services.AddDbContext<MvcGlassContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcGlassContext")));
+
+            services.AddDbContext<MvcDrinkContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcDrinkContext")));
+
+            services.AddDbContext<MvcMeatContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcMeatContext")));
+
+            services.AddDbContext<MvcVegetableContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcVegetableContext")));
+           
+            services.AddDbContext<MvcGenreContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcGenreContext")));
+
+            services.AddDbContext<MvcAuthorContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcAuthorContext")));
+
+            services.AddDbContext<MvcAuthorsBookContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MvcAuthorsBookContext")));
         }
 
 

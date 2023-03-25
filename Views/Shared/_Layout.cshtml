@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Przykład aplikacji dla studentów</title>
+    <title>@ViewData["Title"] - Przykład aplikacji dla studentów </title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -25,10 +25,27 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">O mnie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Movies" asp-action="Index">Filmy</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Polityka prywatności</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">Bazy danych</button>
+                                <div class="dropdown-content">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Movies" asp-action="Index">Filmy</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="BookLists" asp-action="Index">Książki</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Phones" asp-action="Index">Telefony</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Shoes" asp-action="Index">Buty</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Knives" asp-action="Index">Noże</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Plates" asp-action="Index">Talerze</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Glasses" asp-action="Index">Szklanki</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Drinks" asp-action="Index">Napoje</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Meats" asp-action="Index">Mięsa</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Vegetables" asp-action="Index">Warzywa</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Genres" asp-action="Index">Gatunki literackie</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Authors" asp-action="Index">Autorzy</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="AuthorsBooks" asp-action="Index">Książki autorów</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
